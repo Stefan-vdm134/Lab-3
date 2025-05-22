@@ -13,7 +13,7 @@ sudo systemctl start mariadb
 
 # Create secure MariaDB user and login DB
 echo "[+] Creating login_db and admin user..."
-HASHED_PASS=$(php -r "echo password_hash('monkeyman', PASSWORD_DEFAULT);")
+HASHED_PASS=$(php -r "echo password_hash('Ollie_Leo1', PASSWORD_DEFAULT);")
 
 sudo mysql <<EOF
 CREATE DATABASE IF NOT EXISTS login_db;
